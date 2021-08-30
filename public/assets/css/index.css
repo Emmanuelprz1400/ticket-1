@@ -1,0 +1,25 @@
+.main{
+ 
+    padding: 20px 10px;
+    border-style: groove
+}
+.nav{
+    padding: 20px 10px;
+}
+.dataUser{
+   
+    padding: 20px 10px;
+    border-style: groove
+}
+.dataBudget{
+    
+    padding: 20px 10px;
+    border-style: groove
+}
+.container{
+    margin-top: 100px;
+}
+.title_budget{
+    text-align:center;
+    font-size: 7mm;
+}

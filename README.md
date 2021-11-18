@@ -6,7 +6,10 @@
 ```
 Download ZIP
 ```
-
+o escribir en *Git Bash* lo siguiente
+```
+$ git clone <link repositorio>
+```
 
 **Paso 2:** En el proyecto hacer click en *"crear un nuevo archivo"* con el nombre `.ENV` e ingresar lo siguiente:
 

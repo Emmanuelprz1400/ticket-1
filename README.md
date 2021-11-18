@@ -6,11 +6,15 @@
 ```
 Download ZIP
 ```
+<<<<<<< HEAD
 o en *Git Bash* escribir lo siguiente:
 ```
-$ git clone https://github.com/Emmanuelprz1400/ticket-1.git
+$ git clone <link repo>
 ```
 **Paso 2:** En el proyecto hacer click en *"crear un nuevo archivo"* con el nombre `.ENV` e ingresar lo siguiente:
+=======
+**Paso 2:** En el proyecto modificar los datos de las variables de entorno en `.ENV`
+>>>>>>> 268af399524b405d3d52e7f4eb48e048adb07de8
 ```
 HOST = 
 PORT =

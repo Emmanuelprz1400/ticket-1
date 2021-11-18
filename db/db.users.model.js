@@ -9,11 +9,11 @@ const Users = sequelize.define('users', {
         autoIncrement: true 
     },
 	names: {
-		type: DataTypes.STRING(50),
+		type: DataTypes.STRING(25),
 		allowNull: false
 	},
 	last_names: {
-		type: DataTypes.STRING(50),
+		type: DataTypes.STRING(25),
 		allowNull: false
 	},
 	email: {
@@ -21,11 +21,11 @@ const Users = sequelize.define('users', {
 		allowNull: false
 	},
 	userName: {
-		type: DataTypes.STRING(20),
+		type: DataTypes.STRING(10),
 		allowNull: false
 	},
     password: {
-		type: DataTypes.STRING(50),
+		type: DataTypes.STRING(20),
 		allowNull: false
 	},
 	phone_number: {
@@ -33,7 +33,7 @@ const Users = sequelize.define('users', {
 		allowNull: false
 	},
 	active: {
-		type: DataTypes.STRING(15),
+		type: DataTypes.STRING(1),
 		allowNull: false
 	},
 	role: {

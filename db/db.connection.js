@@ -1,4 +1,4 @@
-/** Import required modules */
+// Importación de módulos requeridos
 const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize(process.env.DB_NAME, null, null, {

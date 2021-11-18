@@ -5,7 +5,7 @@ const Joi = require('joi');
 
 //Limitar el tiempo a 10 min
 const limiter = rateLimit({
-	windowMs: 10 * 60 * 1000,
+	windowMs: 10*60*1000,
 	max: 100,
 	message: 'Requests exceeded, wait 10 minutes'
 });
@@ -62,9 +62,9 @@ const validateLoginInfo = async (req, res, next) => {
 };
 
 //Middleware para cambiar la contraseña
-const chamgePassInfor = async (req, res, next) => {
+const changePassInfo = async (req, res, next) => {
 	try {
-		await Joi.attempt(req.body, userValidationModel.chamgePassInfor, 'invalid login data');
+		await Joi.attempt(req.body, userValidationModel.changePassInfo, 'invalid login data');
 		return next();
 	} catch (error) {
 		console.log(error.message);
@@ -76,7 +76,7 @@ module.exports = {
     validateToken,
 	validateRegisterInfo,
 	validateLoginInfo,
-	chamgePassInfor,
+	changePassInfo,
 	corsOption,
 	limiter,
 };

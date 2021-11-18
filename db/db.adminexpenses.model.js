@@ -12,7 +12,7 @@ const AdminExpenses = sequelize.define('adminExpenses', {
         allowNull: false
     },
 },{
-    timestamps: false //date
+    timestamps: false
 });
 
 module.exports = AdminExpenses

@@ -1,7 +1,7 @@
 const {DataTypes} = require('sequelize');
 const sequelize = require('./db.connection');
 const Income = require('./db.income.model');
-const DirectCots = require('./db.directCost.model');
+const DirectCost = require('./db.directCost.model');
 const AdminExpenses = require('./db.adminexpenses.model');
 
 const Concept = sequelize.define('concept', {
@@ -11,11 +11,11 @@ const Concept = sequelize.define('concept', {
         autoIncrement: true 
     },
     name: {
-        type: DataTypes.STRING(100),
+        type: DataTypes.STRING(25),
         allowNull: false
     }
 },{
-    timestamps: false //date
+    timestamps: false
 });
 
 Concept.hasMany(AdminExpenses, {
@@ -30,7 +30,7 @@ Concept.hasMany(Income, {
     onDelete: 'cascade',
     onUpdate: 'cascade'});
 
-Concept.hasMany(DirectCots, {
+Concept.hasMany(DirectCost, {
     foreignKey: 'id_concept',
     constraints: true,
     onDelete: 'cascade',

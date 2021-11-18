@@ -1,10 +1,14 @@
-# Presupuestos Tecla
+# Presupuestos TCA
 
 ## Pasos a seguir 🚶‍♂️
 
 **Paso 1:** Clonar repositorio, dando click en:
 ```
 Download ZIP
+```
+o en *Git Bash* escribir lo siguiente:
+```
+$ git clone https://github.com/Emmanuelprz1400/ticket-1.git
 ```
 **Paso 2:** En el proyecto hacer click en *"crear un nuevo archivo"* con el nombre `.ENV` e ingresar lo siguiente:
 ```
@@ -36,11 +40,22 @@ http://$HOST:$PORT
 
 ## Hecho con 🛠️
 
-**[Backend]**
-*JavaSript, Express, Nodemon, Sequelize, Dotenv Joi, Cors, JWT, Tedious, Mocha, Chai*
+### Tools:
+- JavaScript
+- HTML5
+- CSS3 
+- SQL Server
+- entre otros
 
-**[Frontend]**
-*HTML, EJS, Bootstrap, CSS*
+### Frameworks
+- Node
+- Express
+- Sequelize
+- Tedious
+- Joi
+- Mocha
+- Chai
+- entre otros
 
 ## Autor ✒️
 

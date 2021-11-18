@@ -31,7 +31,7 @@ module.exports = async (app)=>{
      });
 
 	 //Actualización de contraseña
-	 app.post('/user/pass', middlewares.validateToken,middlewares.chamgePassInfor, async (req, res) =>{
+	 app.put('/user/pass', middlewares.validateToken,middlewares.changePassInfo, async (req, res) =>{
         try {
 			let ok = await controlUsers.updatePassword(req.body);
 			if(ok){
@@ -42,7 +42,7 @@ module.exports = async (app)=>{
         }
      });
 
-	//Validar la creación de usuario
+	//Creación de usuario
 	 app.post('/user',middlewares.validateRegisterInfo, async (req, res) =>{
         try {
 			let user = await controlUsers.createUser(req.body);
